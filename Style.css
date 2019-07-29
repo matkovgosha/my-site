@@ -1,0 +1,52 @@
+body {
+    font-family: 'Open sans';
+    background-image: url("img/BackGround.jpg");
+    background-size: 100%;
+    
+    color: yellow;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+h1{
+    font-size: 30px;
+    color:chartreuse
+}
+.main{
+    
+    font-size: 40px;
+    text-align:left;
+}
+p{
+    line-height: 1.8;
+}
+button{
+    border: none;
+    width: 280px;
+    height: 70px;
+    color:white;
+    font-size:20px;
+    font-weight: bolder;
+    background-color: #1758e6;
+    
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 46px;
+    margin: 0 10px 10px 0;
+    margin-top: 100px;
+    padding: 6px;
+    color: #000;
+}
+.vk a:hover {background: #5d84ae; color: #fff;}
+
+
+.mail{
+    text-align: right;    
+}
