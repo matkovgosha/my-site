@@ -5,10 +5,11 @@
         <title>PIXLIFE</title>
         <meta name="Keywords" content=""> 
         <meta name="description" content=""> 
-       <link rel="stylesheet" href="Style.css"> 
+       <link rel="stylesheet" href="styles.css"> 
+        <script src="scripts.js"></script>
     </head>
      <body>
-         <div class = "main">
+         <div class = "main animMain">
              <h1> PIXLIFE</h1>
 							<p>Создание и продвижение сайтов<br>
 							  Разработка логотипа и фирменного стиля<br> 
@@ -17,15 +18,18 @@
                                 Копирайтинг, полиграфия<br>
                                 и многое другое...<br>
                                 </p>
-             <form>
-                 <button> Рассчитать стоимость</button>
-             </form>
+             
+                 <button  class ="Showbutton show-alert"> Рассчитать стоимость</button>
+                 
+             
             <div class="social vk">
-                <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                <a href="http://vk.com" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
              </div>
          </div>
-     <h2>Форма обратной связи.</h2>
-<form class = "mail" name="MyForm" action="mail.php" method="post">
+          
+<div class = "animMail">
+ <form  name="MyForm" action="mail.php" method="post">
+     <div class="close hide-alert"></div>
     <h2>Заполните форму, чтобы рассчитать стоимость</h2>
     <p><input class="input" name="name" ENGINE="text" style="width:15%" placeholder="Ваше имя" /> </p>
     
@@ -36,8 +40,9 @@
     <p><input class="input" name="project" type="text" style="width:15%"placeholder="Название компании или проекта" /> </p>
  
     <p>Текст сообщения:<br/><textarea name="body" cols="1" rows="5" style="width:30%"></textarea></p>
-    <p><input id="submit" value="Отправить" type="submit" /></p>
-</form>
-
+    <p><input  id="submit" value="Отправить" type="submit" /></p>
+ </form>
+         </div>
+         
     </body>
 </html>
