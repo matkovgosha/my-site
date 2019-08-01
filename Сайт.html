@@ -9,29 +9,37 @@
         <script src="scripts.js"></script>
     </head>
      <body>
+         
+        <a href="https://vk.com/conversionart" target="_blank" class="icon icon-vk"></a>
          <div class = "main animMain">
              <h1> PIXLIFE</h1>
-							<p>Создание и продвижение сайтов<br>
+             <div class = "descr"> Больше чем просто реклама</div>
+             <div class = "main-text">
+							<p class = "main-text">Создание и продвижение сайтов<br>
 							  Разработка логотипа и фирменного стиля<br> 
                                 SEO продвижения<br>
                                 Реклама в интернете<br>
                                 Копирайтинг, полиграфия<br>
                                 и многое другое...<br>
                                 </p>
-             
+             </div>
                  <button  class ="Showbutton show-alert"> Рассчитать стоимость</button>
                  
-             
-            <div class="social vk">
-                <a href="http://vk.com" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
-             </div>
-         </div>
+           <ul class = "footer">
+               <li> <div class="social vk">
+                <a class="fa fa-vk fa-2x" href="http://vk.com" target="_blank"></a>  
+                 
+             </div>  </li>
+               <li> <a class = "openModal" href="#openModal">Политика конфиденциальности</a> </li>
+            </ul>
+         </div> 
           
-     <div class = "animMail"> 
- <form  name="MyForm" action="mail.php" method="post">
      <div>
-         <span class = "close hide-alert"></span>
+         <span id = "close" class = "close hide-alert"></span>
      </div>
+         <div class = "animMail"> 
+ <form  name="MyForm" action="mail.php" method="post">
+     
     <h2>Заполните форму, чтобы рассчитать стоимость</h2>
     <p><input class="input" name="name" ENGINE="text" style="width:15%" placeholder="Ваше имя" /> </p>
     
@@ -46,5 +54,16 @@
  </form>
         </div>
          
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="cls">X</a>
+		<h2>Модальное окно</h2>
+		<p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
+		<p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>
+	</div>
+</div>
+
+    
+    
     </body>
 </html>

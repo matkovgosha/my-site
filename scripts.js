@@ -4,13 +4,15 @@ window.onload = function(){
     var btnHide = document.querySelector('.hide-alert');
     var divAlert = document.querySelector('.animMail');
     var Main = document.querySelector('.animMain');
+     var cls = document.getElementById('close');
     
  
     
     
     
 
-    btnShow.addEventListener('click', function(){         
+    btnShow.addEventListener('click', function(){
+        cls.style.display = 'block';
           Main.style.display = 'none';
           var handler = function(){
             divAlert.classList.remove('fa-enter-active');
@@ -29,7 +31,8 @@ window.onload = function(){
        
 });      
  
-    btnHide.addEventListener('click', function(){               
+    btnHide.addEventListener('click', function(){     
+        cls.style.display = 'none';
          divAlert.style.display = 'none';
           var handler2 = function(){
             Main.classList.remove('fa-enter-active');

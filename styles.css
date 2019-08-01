@@ -1,3 +1,4 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 body {
     font-family: 'Open sans';
     background-image: url("img/BackGround.jpg");
@@ -7,17 +8,30 @@ body {
 h1{
     font-size: 30px;
     color:white;
+    margin-bottom: 15px;
+}
+
+p{
+  line-height: 1.8;  
 }
 .main{
     
     font-size: 40px;
     text-align:left;
     color: black;
-    margin-left: 50px;
-    margin-top: 70px;
+    padding-left: 50px;
+    padding-top: 30px;
 }
-p{
+.main-text{
+    margin: 0;
+    margin-bottom: 60px;
     line-height: 1.8;
+}
+
+.descr{
+    font-size: 20px;
+    color:black;
+    margin-bottom: 30px;
 }
 .Showbutton{
     border: none;
@@ -31,26 +45,33 @@ p{
 }
 
 .social a {
-    text-align: center;
-    width: 46px;
-    height: 46px;
-    float: left;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
-    border-radius: 46px;
-    margin: 100px 10px 10px 0;
-    padding: 6px;
+    position: absolute;
+    left: 0px;
+    padding: 7px;
     color: #000;
 }
-/*.vk {
-    background-image: url(img/vk.png);
-    background-color: aqua;
-}*/
 .vk a:hover {
-    background: #5d84ae; color: #fff;
+    
+    background: #5d84ae;
+    border-radius: 50%;
+    color: #fff;
+}
+.fa{
+    font-size: 30px;
+    text-decoration: none;
 }
 
+ul.footer{
+    position: absolute;
+    width: 93%;
+    bottom:80px;
+    column-count: 2;
+    list-style-type:none;
+}
+.openModal{
+    position: absolute;
+    right: 0px;
+}
 
 
 .animMail{
@@ -81,7 +102,7 @@ p{
 }
 
 .close {
-    
+display: none;
 position: absolute;
 right: 50px;
 top: 50px;
@@ -109,4 +130,66 @@ transform: rotate(45deg);
 .close:after {
 transform: rotate(-45deg);
 }
+
+
+
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+
+
+.modalDialog:target {
+	display: block;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+
+.cls {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.cls:hover { background: #00d9ff; }
+
 
