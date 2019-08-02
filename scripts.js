@@ -4,10 +4,8 @@ window.onload = function(){
     var btnHide = document.querySelector('.hide-alert');
     var divAlert = document.querySelector('.animMail');
     var Main = document.querySelector('.animMain');
-     var cls = document.getElementById('close');
-    
- 
-    
+    var cls = document.getElementById('close');
+
     
     
 
