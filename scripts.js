@@ -5,9 +5,25 @@ window.onload = function(){
     var divAlert = document.querySelector('.animMail');
     var Main = document.querySelector('.animMain');
     var cls = document.getElementById('close');
+    
+   
 
     
+$(document).ready(function($) {      
     
+    // Закрытие по клавише Esc.
+    $(document).keydown(function(e) {
+        if (e.keyCode === 27) {
+            document.location.href = "#";
+        }
+    });
+    
+    // Клик по фону, но не по окну.
+    $('body').click(function(e) {
+        document.location.href = "#";
+    });    
+});
+
 
     btnShow.addEventListener('click', function(){
         cls.style.display = 'block';

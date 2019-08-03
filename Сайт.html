@@ -7,10 +7,13 @@
         <meta name="description" content=""> 
        <link rel="stylesheet" href="styles.css"> 
         <script src="scripts.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="form.js"></script>
     </head>
      <body>
+         <h1> PIXLIFE</h1>
          <div class = "main animMain">
-             <h1> PIXLIFE</h1>
              <div class = "descr"> Больше чем просто реклама</div>
              <div class = "main-text">
                  <p class = "main-text">Создание и продвижение сайтов<br>
@@ -28,14 +31,14 @@
                 <a class="fa fa-vk fa-2x" href="http://vk.com" target="_blank"></a>  
                  
              </div>  </li>
-               <li> <a class = "openModal" href="#openModal">Политика конфиденциальности</a> </li>
+               <li> <a href = "#openModal" class = " conf openModal"> Политика конфиденциальности</a> </li>
             </ul>
           
      <div>
          <span id = "close" class = "close hide-alert"></span>
      </div>
          <div class = "animMail"> 
- <form  name="MyForm" action="mail.php" method="post">
+<!-- <form  name="MyForm" action="mail.php" method="post">
      
     <h2>Заполните форму, чтобы рассчитать стоимость</h2>
     <p><input class="input" name="name" ENGINE="text" style="width:15%" placeholder="Ваше имя" /> </p>
@@ -48,15 +51,25 @@
  
     <p>Текст сообщения:<br/><textarea name="body" cols="1" rows="5" style="width:30%"></textarea></p>
     <p><input  id="submit" value="Отправить" type="submit" /></p>
- </form>
+ </form>-->
+
+     <p class = "mailText">Заполните форму, чтобы рассчитать стоимость</p>
+     <form id="contact" action="#" method="post" name="contact">
+        <input id="name" class="txt" name="name" type="name" placeholder="Ваше имя" />
+        <input id="phone" class="txt" name="phone" type="phone" placeholder="+7(___)___-__-__" /> 
+        <input id="email" class="txt" name="email" type="email" placeholder="Ваш e-mail" /> 
+        <textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea>
+        <button class = "Showbutton" id="send">Рассчитать стоимость</button>
+     </form>
+
              <p class = "Formtext">Специалист агентства свяжется с вами в ближайшее время, уточнит задачу и сориентирует по стоимости работ.</p>
-             <p class = "Formtext">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a  href="#openModal">Политикой конфиденциальности</a></p>
+             <p class = "Formtext FormConftext">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class = "confForm" href="#openModal">Политикой конфиденциальности</a></p>
         </div>
          
 <div id="openModal" class="modalDialog">
     <div>
     
-          <a href="#" title="Закрыть" class="cls">X</a>
+          <a id = "closeModal" href="#" title="Закрыть" class="cls">X</a>
             <div class="confident-title">Пользовательское соглашение</div>
             <div class="confident-subtitle">
               Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует
