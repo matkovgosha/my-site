@@ -49,8 +49,7 @@ function validateEmail(email) {
           success: function(data) {
             if(data == "true") {
               $("#contact").fadeOut("fast", function(){
-                $(this).before("<p><strong>Успешно! Ваше сообщение отправлено  :)</strong></p>");
-                setTimeout("$.fancybox.close()", 1000);
+                $(this).before("<p><strong>Ваше сообщение успешно отправлено.</strong></p>");
               });
             }
           }
@@ -58,7 +57,33 @@ function validateEmail(email) {
       }
     });
   });
+$.fn.setCursorPosition = function(pos) {
+    this.each(function(index, elem) {
+    if (elem.setSelectionRange) {
+        elem.setSelectionRange(pos, pos);
+    } else if (elem.createTextRange) {
+        var range = elem.createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+    }
+    });
+    return this;
+};
+
 jQuery(function($){
    $("#phone").mask("+7 (999) 999-9999");
-   $("#phone2").mask("+7 (999) 999-9999");
+    $("#phone").click(function(){
+    if(document.getElementById("phone").value === '+7 (___) ___-____'){
+         $(this).setCursorPosition(4);  // set position number
+         }
+    });
+    
 });
+
+
+
+
+
+ 

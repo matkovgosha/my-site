@@ -18,7 +18,7 @@ $(document).ready(function($) {
         }
     });
     
-    // Клик по фону, но не по окну.
+    
     /*$('body').click(function(e) {
         document.location.href = "#";
     });*/    

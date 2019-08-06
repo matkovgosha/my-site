@@ -25,10 +25,11 @@ color: black;
  text-decoration: none;    
 }
 .confForm{
+ color:white;
  text-decoration: underline;    
 }
 .confForm:visited{
- color:#777; 
+ color:white; 
 }
 .main{
     font-size: 40px;
@@ -52,7 +53,7 @@ color: black;
     width: 500px;
 }
 .FormConftext{
-    color:#777;
+    color:white;
 }
 .Showbutton{
     border: none;
