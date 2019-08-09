@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang = "ru">
+<html lang = "ru" >
     <head>
         <meta charset="utf-8">
         <title>PIXLIFE</title>
         <meta name="Keywords" content=""> 
         <meta name="description" content=""> 
+        
+        
        <link rel="stylesheet" href="styles.css"> 
+        
+        
+          <!-- <link rel="stylesheet" href="bootstrap.min.css">    -->                     <!-- удалить эти 2 если не сработает -->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"> -->
+        
+        
+        
         <script src="scripts.js"></script>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="jquery.maskedinput.js"></script>
         <script type="text/javascript" src="form.js"></script>
+       
     </head>
      <body>
+         <div class = "animation"></div> 
+         <div class="wrapper">
          <h1> PIXLIFE</h1>
          <div class = "main animMain">
              <div class = "descr"> Больше, чем просто реклама</div>
@@ -30,6 +42,8 @@
      <div>
             <span id = "close" class = "close hide-alert"></span>
      </div>
+         
+        
          <div class = "animMail"> 
 
      <p class = "mailText">Заполните форму, чтобы рассчитать стоимость</p>
@@ -45,9 +59,9 @@
              <p class = "Formtext FormConftext">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a class = "confForm" href="#openModal">Политикой конфиденциальности</a></p>
         </div>
          
-<div id="openModal" class="modalDialog">
-    <div>
-    
+         
+         <div id="openModal" class="modalDialog">
+             <div> 
           <a id = "closeModal" href="#" title="Закрыть" class="cls">X</a>
             <div class="confident-title">Пользовательское соглашение</div>
             <div class="confident-subtitle">
@@ -297,11 +311,14 @@
             </p>
             <p class="confident-p">9.4. Действующая Политика конфиденциальности размещена на странице по адресу: <br> http://pixlife.pro</p>
 	
-         </div>
+</div>
     </div>
-         <footer><div class="social vk">
+     
+         <div class = "footer"><div class="social vk">
              <a class="fa fa-vk fa-2x" href="http://vk.com" target="_blank"></a>  
              </div>
-                 <a href = "#openModal" class = " conf openModal"> Политика конфиденциальности</a></footer>
-    </body>
+                 <a href = "#openModal" class = " conf openModal"> Политика конфиденциальности</a></div>  
+             
+             </div> 
+                </body>
 </html>

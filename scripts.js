@@ -6,8 +6,7 @@ window.onload = function(){
     var Main = document.querySelector('.animMain');
     var cls = document.getElementById('close');
     
-   
-
+ 
     
 $(document).ready(function($) {      
     
@@ -19,9 +18,12 @@ $(document).ready(function($) {
     });
     
     
-    /*$('body').click(function(e) {
-        document.location.href = "#";
-    });*/    
+    $('#openModal').click(function(e) {
+        if ( e.target.id == 'openModal' ){   
+            document.location.href = "#";
+        }
+        
+    });  
 });
 
 

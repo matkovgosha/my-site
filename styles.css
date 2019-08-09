@@ -1,9 +1,43 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-body {
-    font-family: 'Open sans' , sans-serif;
-    background-image: url("img/BackGround.jpg");
-    background-size: 100%;
+body {    
+   background-color:#8C9FD7;
+    font-family: 'Open sans' , sans-serif; 
+    margin: 0;
+} 
+
+html,body{   
+}
+
+.animation{  
+    width: 100%;
+    height: 100%;
+    position:fixed; 
+   background-image: url(img/BackGround.jpg);
     background-repeat: no-repeat;
+     background-attachment:fixed;
+    background-position: center center;
+    background-size:cover;
+    z-index: -100;
+    animation: myAnim 30s linear 10ms infinite;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    z-index: -2;
+       
+}
+
+.wrapper {
+display: flex;
+flex-direction: column;
+  height: -webkit-fill-available;
+    height: -moz-available;
+}
+.footer{
+    display: flex;
+    
+    align-self :flex-end;
 }
 h1{
     font-size: 30px;
@@ -66,22 +100,13 @@ color: black;
     margin: 25px 0;
     
 }
-footer{
-margin-top: 0px;
-padding-top: 0px;
-height: 0px;
-position: fixed;
-bottom: 70px;
-width: 100%;
-}
 .social a {
-    position: absolute;
+    position: fixed;
+    bottom: 50px;
     left: 50px;
-    padding: 7px;
     color: #000;
 }
 .vk a:hover {
-    
     background: #5d84ae;
     border-radius: 50%;
     color: #fff;
@@ -92,11 +117,11 @@ width: 100%;
 }
 
 .openModal{
-    position: absolute;
+    position: fixed;
+    bottom: 50px;
     right:30px;
     font-size: 14px;
 }
-
 
 .animMail{
     padding: 0 0 0 50px;
@@ -114,16 +139,7 @@ width: 100%;
     animation: Enter 0.4s linear;
 }
 
-@keyframes Enter{
-    from{
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
+
 
 .close {
 display: none;
@@ -173,11 +189,13 @@ transform: rotate(-45deg);
 }
 
 .modalDialog:target {
+    
 	display: block;
-	pointer-events: auto;
+	pointer-events:auto;
 }
 
 .modalDialog > div {
+    
 	width: 750px;
 	position: relative;
 	margin: 3% auto;
@@ -185,6 +203,12 @@ transform: rotate(-45deg);
 	background: #eee;
 	
 }
+/*.modalOverlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 1001;
+}*/
 
 .cls {
 	background: #606061;
@@ -279,3 +303,26 @@ input.error:focus, textarea.error:focus {
     border-color: #973d3d; 
     color: #a35959;
      }
+
+
+@keyframes Enter{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes myAnim{
+    
+    0%{ transform: scale(1)}
+    100%{ transform: scale(1.5)}
+}
+
+
+
+
+
+
