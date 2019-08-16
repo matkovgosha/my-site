@@ -18,7 +18,7 @@ html,body{
     background-position: center center;
     background-size:cover;
     z-index: -100;
-    animation: myAnim 30s linear 10ms infinite;
+    animation: myAnim 60s linear 10ms infinite;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -35,9 +35,10 @@ flex-direction: column;
     height: -moz-available;
 }
 .footer{
-    display: flex;
-    
-    align-self :flex-end;
+    align-self :flex-end; 
+}
+button:hover{
+    cursor: pointer;
 }
 h1{
     font-size: 30px;
@@ -51,20 +52,71 @@ h1{
     padding-left: 50px;
     padding-top: 30px;
 }
+.mainPhone{
+    float:right;
+    margin: -120px 60px 0 0;
+    color:white;
+    font-size: 20px;
+}
+.mainPhone a{
+   color:white; 
+}
+.mainPhone p{
+    margin-bottom: 10px;
+}
+.mainPhone span{
+     margin-left: 35px;
+}
+.mainPhone strong{
+    font-size: 30px;
+}
+
+.Formtext{
+    display: block;
+    width: 500px;
+    margin-bottom: 5px;
+    color:white;
+    text-shadow: black 1px 1px 1px;
+    
+}
 .conf:visited {
  color:black;
 }
 .conf{
 color: black;
  text-decoration: none;    
+     
 }
 .confForm{
  color:white;
- text-decoration: underline;    
+ text-decoration: underline;  
+     
 }
 .confForm:visited{
  color:white; 
+     
 }
+.Phone{
+    font-size: 25px;
+    padding-left: 30px;
+    color:white;
+    margin: 0;
+    text-decoration: underline;
+     text-shadow: black 1px 1px 1px;
+}
+.phoneText{
+    color: white;
+    font-size: 20px;
+    margin: 5px 0 ;
+    font-weight: bold;
+     text-shadow: black 1px 1px 1px;  
+}
+.FormConftext{
+    color:white;
+    
+    
+}
+
 .main{
     font-size: 40px;
     text-align:left;
@@ -82,29 +134,25 @@ color: black;
     color:black;
     margin-bottom: 30px;
 }
-.Formtext{
-    display: block;
-    width: 500px;
-}
-.FormConftext{
-    color:white;
-}
+
 .Showbutton{
     border: none;
     width: 280px;
     height: 70px;
     color:white;
-    font-size:20px;
+    font-size:18px;
     font-weight: bolder;
     background-color: #1758e6;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
     
 }
 .social a {
-    position: fixed;
-    bottom: 50px;
+    display: inline-block;
+    position: relative;
+    top: 130px;
     left: 50px;
     color: #000;
+    margin-bottom: 20px;
 }
 .vk a:hover {
     background: #5d84ae;
@@ -117,10 +165,15 @@ color: black;
 }
 
 .openModal{
-    position: fixed;
-    bottom: 50px;
-    right:30px;
+    display: block;
+    position: relative;
+    text-align: right;
+    width: 30%;
+    margin: 0 0 0 auto;
+    right: 30px;
+    top: 90px;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .animMail{
@@ -154,6 +207,7 @@ border-radius: 50%;
 }
 .close:hover {
 opacity: 1;
+    cursor: pointer;
 }
 .close:before, .close:after {
 position: absolute;
@@ -203,13 +257,6 @@ transform: rotate(-45deg);
 	background: #eee;
 	
 }
-/*.modalOverlay {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   z-index: 1001;
-}*/
-
 .cls {
 	background: #606061;
 	color: #FFFFFF;
@@ -264,7 +311,8 @@ transform: rotate(-45deg);
     font-weight: lighter;
     line-height: 1.2;
     width: 750px;
-    margin-top: 25px;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 .txt { 
     display: block;
@@ -320,9 +368,3 @@ input.error:focus, textarea.error:focus {
     0%{ transform: scale(1)}
     100%{ transform: scale(1.5)}
 }
-
-
-
-
-
-
